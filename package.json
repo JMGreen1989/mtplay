@@ -1,0 +1,29 @@
+{
+  "name": "j-walking",
+  "version": "1.0.0",
+  "description": "project 1 game, \"j-walking\". a frogger style game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "this game is awesome "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.generalassemb.ly:JasonMGreen/project-1.git"
+  },
+  "keywords": [
+    "project",
+    "1",
+    "j-walking",
+    "wdi",
+    "game"
+  ],
+  "author": "Jason Green <JasonMGreen89@yahoo.com>",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  }
+}
