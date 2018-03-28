@@ -30,14 +30,14 @@ Have fun!
 
 ## Wireframes
 
-<img src="http://res.cloudinary.com/dc6dj6gen/image/upload/v1522274216/IMG_3288.jpg">
+<img src="http://res.cloudinary.com/dc6dj6gen/image/upload/v1522274216/IMG_3288.jpg"/>
                       
-<img src="https://imgur.com/FaxoPGl">
+<img src="https://imgur.com/FaxoPGl"/>
                       
 
 ## Priority Matrix
 
-<img src="https://imgur.com/HuHk7u2">
+<img src="https://imgur.com/HuHk7u2"/>
 
 ## Game Components
 
