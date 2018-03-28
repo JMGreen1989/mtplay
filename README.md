@@ -37,7 +37,7 @@ Have fun!
 
 ## Priority Matrix
 
-<img src="https://imgur.com/HuHk7u2" >
+<img src="https://imgur.com/HuHk7u2">
 
 ## Game Components
 
