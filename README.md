@@ -30,7 +30,7 @@ Have fun!
 
 ## Wireframes
 
-<img src="http://res.cloudinary.com/dc6dj6gen/image/upload/v1522274216/IMG_3288.jpg" alt="">
+<img src="https://res.cloudinary.com/dc6dj6gen/image/upload/v1522274216/IMG_3288.jpg">
                       
 <img src="https://imgur.com/FaxoPGl">
                       
