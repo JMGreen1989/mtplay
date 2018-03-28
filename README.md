@@ -32,12 +32,12 @@ Have fun!
 
 <img src="https://res.cloudinary.com/dc6dj6gen/image/upload/v1522274216/IMG_3288.jpg">
                       
-<img src="https://imgur.com/FaxoPGl">
+<img src="https://res.cloudinary.com/dc6dj6gen/image/upload/v1522274213/IMG_3289.jpg">
                       
 
 ## Priority Matrix
 
-<img src="https://imgur.com/HuHk7u2">
+<img src="https://res.cloudinary.com/dc6dj6gen/image/upload/v1522274218/IMG_3290.jpg">
 
 ## Game Components
 
