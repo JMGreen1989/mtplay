@@ -23,17 +23,16 @@ Description: MTPLAY is a New York City trivia game. The player receives a questi
 that can pertain to the history of the city, a fun fact, or anything
 in between. 
 
-There are seven question in total, but if you get more than TWO wrong, 
-YOU'RE OUT and must start from the top. 
+There are 10 questions in total and if you get TWO wrong, in any order, YOU'RE OUT. 
 
 Have fun! 
 
 
 ## Wireframes
 
-<img src="https://res.cloudinary.com/dc6dj6gen/image/upload/v1522274216/IMG_3288.jpg">
+https://res.cloudinary.com/dc6dj6gen/image/upload/v1522274216/IMG_3288.jpg
                       
-<img src="https://res.cloudinary.com/dc6dj6gen/image/upload/v1522274213/IMG_3289.jpg">
+https://res.cloudinary.com/dc6dj6gen/image/upload/v1522274213/IMG_3289.jpg
                       
 
 ## Priority Matrix
@@ -59,16 +58,19 @@ If you answer every question correctly you win and you have the option to play a
 If you win or lose you go back to the landing page.
 
 ## MVP 
-
+- A player can enter their name.
 - Each question will be multiple choice.
 - There will be 10 questions.
 - The order they are presented will be random every time.
-- All questions are about NYC's past, present mixed with some fun facts
+- All questions are about NYC's past, present and mixed with some fun facts.
+- A player loses if they get two questions wrong, in any order. Meaning two in a row, two at the beginning or end, two in any place.
+- The end game consists of the players name and how many they got correct out of 10.
 
 ## POST MVP
 
-Music, and a timer.
-
+- Music
+- A timer 
+- A scoring system 
 ## Functional Components
 
 Based on the initial logic defined in the previous game phases section try and breakdown the logic further into functional components, and by that we mean functions.  Does your logic indicate that code could be encapsulated for the purpose of reusablility.  Once a function has been defined it can then be incorporated into a class as a method. 
