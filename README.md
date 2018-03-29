@@ -18,6 +18,7 @@ This schedule will be used to keep track of your progress throughout the week an
 ## Project Description
 
 Title: MTPLAY
+
 Description: MTPLAY is a New York City trivia game. The player receives a question 
 that can pertain to the history of the city, a fun fact, or anything
 in between. 
