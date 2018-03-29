@@ -60,8 +60,10 @@ If you win or lose you go back to the landing page.
 
 ## MVP 
 
-Each question will be multiple choice. Some questions will be very simple, some will be difficult. 
-The question will be displayed as a smaller window within the broswer.
+- Each question will be multiple choice.
+- There will be 10 questions.
+- The order they are presented will be random every time.
+- All questions are about NYC's past, present mixed with some fun facts
 
 ## POST MVP
 
