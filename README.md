@@ -37,12 +37,12 @@ https://res.cloudinary.com/dc6dj6gen/image/upload/v1522274213/IMG_3289.jpg
 
 ## Priority Matrix
 
-<img src="https://res.cloudinary.com/dc6dj6gen/image/upload/v1522274218/IMG_3290.jpg">
+https://res.cloudinary.com/dc6dj6gen/image/upload/v1522274218/IMG_3290.jpg
 
 ## Game Components
 
 ### Landing Page
-The landing page consists of the title of the game plus a game description.
+The landing page consists of the title of the game plus a game description. You can also enter your name. 
 
 
 ### Game Initialization
@@ -79,8 +79,10 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Component 1 | H | 10hrs| 12hrs | 12hrs |
-| Total |  | 10hrs| 12hrs | 12hrs |
+| Question logic | H | 8hrs| 1hrs | N/A |
+| Functionality | H | 8hrs | 0hrs | N/A | 
+| Styling | | 4hrs | 2hrs | N/A |
+| Total |  | N/A| N/A | N/A |
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
