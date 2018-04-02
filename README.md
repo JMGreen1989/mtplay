@@ -17,15 +17,14 @@ This schedule will be used to keep track of your progress throughout the week an
 
 ## Project Description
 
-Title: MTPLAY
+Title: MTplAy
 
-Description: MTPLAY is a New York City trivia game. The player receives a question 
+Description: MTplAy is a New York City trivia game. The player receives a question 
 that can pertain to the history of the city, a fun fact, or anything
 in between. 
 
-There are 10 questions in total and if you get TWO wrong, in any order, YOU'RE OUT. 
-
-Have fun! 
+There are 10 questions in total and if you get four wrong, YOU'RE OUT. 
+ 
 
 
 ## Wireframes
@@ -42,17 +41,17 @@ https://res.cloudinary.com/dc6dj6gen/image/upload/v1522274218/IMG_3290.jpg
 ## Game Components
 
 ### Landing Page
-The landing page consists of the title of the game plus a game description. You can also enter your name. 
+The landing page consists of the title of the game. 
 
 
 ### Game Initialization
 The background will be a NYC themed backdrop, and each trivia question will be a smaller window within the broswer.
 
 ### Playing The Game
-Each question is harder than the last. If you can keep a winning streak, you win! If you get more than two wrong, you lose!
+Each question is harder than the last. If you can keep a winning streak, you win! If you get four wrong, you lose!
 
 ### Winning The Game
-If you answer every question correctly you win and you have the option to play again.
+If you answer every question correctly you win and the game reloads.
 
 ### Game Reset
 If you win or lose you go back to the landing page.
@@ -77,13 +76,13 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Question logic | H | 8hrs| 1hrs | N/A |
-| Functionality | H | 8hrs | 0hrs | N/A | 
-| Styling | | 4hrs | 2hrs | N/A |
+| Question logic | H | 8hrs| 12hrs | 12hrs |
+| Functionality | H | 8hrs | 12hrs | 12hrs | 
+| Styling | | H | 2hrs | 5hrs |
 | Total |  | N/A| N/A | N/A |
 
 ## Helper Functions
-Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
+Helper functions should be generic enough that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
 
 | Function | Description | 
 | --- | :---: |  
@@ -94,17 +93,49 @@ Helper functions should be generic enought that they can be reused in other appl
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  
+This is half of my Q and A array
+--
+const triviaGame = [
+  {
+    question: "1. Which bridge connects Manhattan to Brooklyn?",
+    choices: ["Golden Gate", "Brooklyn", "London"],
+    answer: "Brooklyn"
+  }, {
+    question: "2. How many floors does the Empire State Building have?",
+    choices: ["102", "204", "900"],
+    answer: "102"
+  }, {
+    question: "3. The name of the three-hour sightseeing boat in Manhattan?",
+    choices: ["Boaty McBoatface", "The Sightseeing Line", "Circle Line"],
+    answer: "Circle Line"
+  }, {
+    question: "4. Who was elected mayor of New York in November 2001?",
+    choices: ["Mike Pence", "Rudy Giuliani", "Mike Bloomberg"],
+    answer: "Mike Bloomberg"
+  }, {
+    question: "5. Where is DUMBO?",
+    choices: ["Brooklyn", "Bronx", "Queens"],
+    answer: "Brooklyn"
+ --
+ I am proud of this because I was able to succinctly get all the Qs and As on screen, and I've never made a game before.  
 
 ## jQuery Discoveries
- Use this section to list some, but not all, of the jQuery methods and\or functionality discovered while working on this project.
+
+  $('#choice1').on('click', () => {
+    evaluate(triviaGame[i], $('#choice1').html())
+    
+This is the part of my code that evaluates if you're clicking the correct answer or not and whether the alert will appear. It ties into a function called askQuestion. 
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+I changed a few things while creating this trivia game.
 
+- I was sure I'd impliment a score but never got that far.
+- I wanted each question to have a time limit, like Kahoot.
+- Over the course of the game I changed how many you can get wrong a few times. It was 3 wrong, then 5, then I settled with 4.
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
-
+ My biggest issue was getting my questions and choices to appear on the center of the page. 
+I wanna give a big thank you to my classmate Andrew for helping me.
+He showed me how to create a function that selects each choice presented on screen 
 #### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+**ERROR**: I'm actually dealing with an error now that says my .question is not defined in my checkAnswer function. Not sure why this is happening, it was working all day.                             
+**RESOLUTION**: In the middle of trying to solve it now. 
