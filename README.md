@@ -58,16 +58,14 @@ If you answer every question correctly you win and you have the option to play a
 If you win or lose you go back to the landing page.
 
 ## MVP 
-- A player can enter their name.
 - Each question will be multiple choice.
 - There will be 10 questions.
 - The order they are presented will be random every time.
 - All questions are about NYC's past, present and mixed with some fun facts.
 - A player loses if they get two questions wrong, in any order. Meaning two in a row, two at the beginning or end, two in any place.
-- The end game consists of the players name and how many they got correct out of 10.
 
 ## POST MVP
-
+- Player can enter their name.
 - Music
 - A timer 
 - A scoring system 
