@@ -1,4 +1,7 @@
-//  got trivia questions from a variety of websites
+// I got trivia questions from a variety of websites
+// I'd like to thank the GA Opportunity TAs for all the help
+// Also I'd like to thank my classmates who lended a hand
+
 
 //beginning of jQuery
 $(document).ready(function(){
@@ -64,24 +67,30 @@ const triviaGame = [
 ];
 
 
-//this is the win lose function. It evaulates if what you click on -->
+//The win lose function. It evaulates if what you click on -->
 //--> is the right answer
-// questionNumber is the position of the questions in the array. 0-9.
+// questionNumber is the position of the questions in the array.
+// it starts at 0 AKA the first question and continues
+// Andrew Craft helped me with this function
 let questionNumber = 0;
 function evaluate(questionObject, answer) {
+  //if you you choose the answer that's correct you'll progress
   if (answer === questionObject.answer){
   alert("You're correct!");
   gameScore += 1;
+  //likewise, if you choose wrong you'll be alerted as such
     }else {
   youLose += 1;
   alert("Sorry, wrong answer!");
-
 }
+//this progresses the points the player accumulates for the win logic
  questionNumber += 1
  askQuestion(questionNumber);
  winLogic();
 }
 
+// your gameScore is 10 AKA you get all 10 right, you win
+// if you get 4 wrong, you lose
 function winLogic() {
   if (gameScore===10) {
   alert("Nice going! You win");
@@ -93,23 +102,27 @@ function winLogic() {
 
 
 
-// thank you Andrew Craft for help with this
-    function askQuestion(i) {
-    //looping over each question to appear on screen
-  for(let i=0;i<3;i++);
+// thank you Andrew Craft for help with this as well
+function askQuestion(i) {
+//looping through the Array so it can appear on the div
+ for(let i=0;i<3;i++);
+  //gameQuestion is the div for housing the trivia questions
   gameQuestion = $('#gameQuestion');
   gameQuestion.text(triviaGame[i].question);
-  //picking each choice and finding out whether it's right or wrong
-  $('#choice1').text(triviaGame[i].choices[0])
-  //need to turn off click handlers
+//the first choice from the array appears on the choice1 div
+$('#choice1').text(triviaGame[i].choices[0])
+ //Needed to set the click event off first otherwise the alerts kept-->
+ //--> on going
   $('#choice1').off()
   $('#choice1').on('click', () => {
-    evaluate(triviaGame[i], $('#choice1').html())
+  //this method is executed by evaluate and .html() sets the div on screen
+  evaluate(triviaGame[i], $('#choice1').html())
   });
+  //the process is repeated for the other two choices to choose from
   $('#choice2').text(triviaGame[i].choices[1])
   $('#choice2').off()
   $('#choice2').on('click', () => {
-    evaluate(triviaGame[i], $('#choice2').html())
+  evaluate(triviaGame[i], $('#choice2').html())
   });
   $('#choice3').text(triviaGame[i].choices[2])
   $('#choice3').off()
@@ -117,7 +130,6 @@ function winLogic() {
     evaluate(triviaGame[i], $('#choice3').html())
   });
   }
+  //executing the function starting with the first one, 0
   askQuestion(0);
-
-  //jQuery closing
-  });
+}
