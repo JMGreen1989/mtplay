@@ -16,8 +16,10 @@ $(document).ready(function(){
 //  I am making the "Lets play" button hide when you click on it
 //  This lets the player start the game
     $('.startBtn').on('click', () => {
-    $('.startBtn').addClass('animation');
-    // $('.startBtn').hide();
+    // I tried putting in a CSS animation from http://animista.net/play/exits
+    // Unfortunatley the animation never worked, not sure why
+    // $('.startBtn').addClass('animation');
+    $('.startBtn').hide();
     $('#gameContainer').css('display', 'initial');
   });
 
