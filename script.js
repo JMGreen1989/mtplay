@@ -16,7 +16,8 @@ $(document).ready(function(){
 //  I am making the "Lets play" button hide when you click on it
 //  This lets the player start the game
     $('.startBtn').on('click', () => {
-    $('.startBtn').hide();
+    $('.startBtn').addClass('animation');
+    // $('.startBtn').hide();
     $('#gameContainer').css('display', 'initial');
   });
 
@@ -83,10 +84,12 @@ function evaluate(questionObject, answer) {
   youLose += 1;
   alert("Sorry, wrong answer!");
 }
-//this progresses the points the player accumulates for the win logic
+//this progresses the player as they answer more questions
+//I had to put winLogic before questionNumber because it kept counting
+//over it and not initiating the winLogic
+ winLogic();
  questionNumber += 1
  askQuestion(questionNumber);
- winLogic();
 }
 
 // your gameScore is 10 AKA you get all 10 right, you win
@@ -104,8 +107,9 @@ function winLogic() {
 
 // thank you Andrew Craft for help with this as well
 function askQuestion(i) {
+  console.log(triviaGame[i]);
 //looping through the Array so it can appear on the div
- for(let i=0;i<3;i++);
+ // for(let i=0;i<3;i++)
   //gameQuestion is the div for housing the trivia questions
   gameQuestion = $('#gameQuestion');
   gameQuestion.text(triviaGame[i].question);
@@ -130,6 +134,6 @@ $('#choice1').text(triviaGame[i].choices[0])
     evaluate(triviaGame[i], $('#choice3').html())
   });
   }
-  //executing the function starting with the first one, 0
   askQuestion(0);
+  //executing the function starting with the first one, 0
 })

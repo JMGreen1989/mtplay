@@ -47,6 +47,7 @@ h1 {
   left:300px
 
 
+
 }
 
 #gameQuestions {
@@ -83,4 +84,8 @@ h1 {
   border: 1px solid black;
   padding: 1px;
   font-size: 35px;
+}
+
+.animation {
+  animation: rotate-out-center 0.6s cubic-bezier (0.550, 0.085, 0.680, 0.530) both;
 }
