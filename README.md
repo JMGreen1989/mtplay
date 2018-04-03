@@ -76,10 +76,10 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Question logic | H | 8hrs| 12hrs | 12hrs |
-| Functionality | H | 8hrs | 12hrs | 12hrs | 
-| Styling | | H | 2hrs | 5hrs |
-| Total |  | N/A| N/A | N/A |
+| Question logic | H | 8hrs| 9hrs | 12hrs |
+| Functionality | H | 8hrs | 9hrs | 12hrs | 
+| Styling | H | 4hrs | 6hrs | 6hrs |
+| Total |  | 20hrs| 22hrs | 30hrs |
 
 ## Helper Functions
 Helper functions should be generic enough that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
@@ -92,32 +92,7 @@ Helper functions should be generic enough that they can be reused in other appli
  Use this section to list all supporting libraries and thier role in the project. 
 
 ## Code Snippet
-
-This is half of my Q and A array
---
-const triviaGame = [
-  {
-    question: "1. Which bridge connects Manhattan to Brooklyn?",
-    choices: ["Golden Gate", "Brooklyn", "London"],
-    answer: "Brooklyn"
-  }, {
-    question: "2. How many floors does the Empire State Building have?",
-    choices: ["102", "204", "900"],
-    answer: "102"
-  }, {
-    question: "3. The name of the three-hour sightseeing boat in Manhattan?",
-    choices: ["Boaty McBoatface", "The Sightseeing Line", "Circle Line"],
-    answer: "Circle Line"
-  }, {
-    question: "4. Who was elected mayor of New York in November 2001?",
-    choices: ["Mike Pence", "Rudy Giuliani", "Mike Bloomberg"],
-    answer: "Mike Bloomberg"
-  }, {
-    question: "5. Where is DUMBO?",
-    choices: ["Brooklyn", "Bronx", "Queens"],
-    answer: "Brooklyn"
- --
- I am proud of this because I was able to succinctly get all the Qs and As on screen, and I've never made a game before.  
+https://imgur.com/a/APatI
 
 ## jQuery Discoveries
 
