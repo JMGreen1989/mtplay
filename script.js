@@ -3,6 +3,8 @@
 //beginning of jQuery
 $(document).ready(function(){
 
+
+
 //global variables for keeping tracking of how good or bad the player
 //is doing
 let gameScore = 0;
@@ -92,9 +94,9 @@ function winLogic() {
 
 
 // thank you Andrew Craft for help with this
-function askQuestion(i) {
-  //looping over each question to appear on screen
-  for(let i=0; i < 3; i++);
+    function askQuestion(i) {
+    //looping over each question to appear on screen
+  for(let i=0;i<3;i++);
   gameQuestion = $('#gameQuestion');
   gameQuestion.text(triviaGame[i].question);
   //picking each choice and finding out whether it's right or wrong
@@ -114,9 +116,7 @@ function askQuestion(i) {
   $('#choice3').on('click', () => {
     evaluate(triviaGame[i], $('#choice3').html())
   });
-
   }
-
   askQuestion(0);
 
   //jQuery closing
