@@ -86,7 +86,8 @@ Helper functions should be generic enough that they can be reused in other appli
 
 | Function | Description | 
 | --- | :---: |  
-| Capitalize | This will capitalize the first letter in a string | 
+| winLogic | This decides if you've got enough points to win, or if you answered too many wrong ones.| 
+
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 
