@@ -3,26 +3,26 @@
 // Also I'd like to thank my classmates who lended a hand
 
 
-//beginning of jQuery
+//  beginning of jQuery
 $(document).ready(function(){
 
 
 
-//global variables for keeping tracking of how good or bad the player
-//is doing
-let gameScore = 0;
-let youLose = 0;
+//  global variables for keeping tracking of how good or bad the player
+//  is doing
+    let gameScore = 0;
+    let youLose = 0;
 
-//I am making the "Lets play" button hide when you click on it
-//This lets the player start the game
-$('.startBtn').on('click', () => {
+//  I am making the "Lets play" button hide when you click on it
+//  This lets the player start the game
+    $('.startBtn').on('click', () => {
     $('.startBtn').hide();
     $('#gameContainer').css('display', 'initial');
   });
 
 
-// the Qs and As
-const triviaGame = [
+//  the Qs and As
+    const triviaGame = [
   {
     question: "1. Which bridge connects Manhattan to Brooklyn?",
     choices: ["Golden Gate", "Brooklyn", "London"],
