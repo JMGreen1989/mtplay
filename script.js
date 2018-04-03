@@ -132,4 +132,4 @@ $('#choice1').text(triviaGame[i].choices[0])
   }
   //executing the function starting with the first one, 0
   askQuestion(0);
-}
+})
