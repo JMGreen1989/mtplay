@@ -115,13 +115,9 @@ function askQuestion(i) {
     evaluate(triviaGame[i], $('#choice3').html())
   });
 
-}
+  }
 
-askQuestion(0);
+  askQuestion(0);
 
-//jQuery closing
-});
-
-
-
-
+  //jQuery closing
+  });
